@@ -1,0 +1,53 @@
+:root {
+    --bg: #0f172a;
+    --col-bg: #1e293b;
+    --card-bg: #334155;
+    --text: #f8fafc;
+    --accent: #6366f1;
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+header { text-align: center; margin-bottom: 30px; }
+
+.input-section {
+    background: var(--col-bg);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select {
+    background: #0f172a;
+    border: 1px solid #475569;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.add-btn { background: var(--accent); color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+
+.board { display: flex; gap: 20px; justify-content: center; }
+
+.column { background: var(--col-bg); flex: 1; border-radius: 12px; padding: 15px; min-height: 500px; }
+
+.task-card { background: var(--card-bg); padding: 15px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #475569; }
+
+.task-card h4 { margin: 0 0 5px 0; }
+.task-card p { font-size: 0.8rem; color: #cbd5e1; margin-bottom: 15px; }
+
+.actions { display: flex; gap: 5px; flex-wrap: wrap; }
+
+button { cursor: pointer; font-size: 0.7rem; border-radius: 4px; border: 1px solid #475569; background: #1e293b; color: #94a3b8; padding: 4px 8px; }
+
+.delete-btn { color: #fb7185; border-color: #fb7185; }
